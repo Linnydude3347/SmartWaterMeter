@@ -64,6 +64,8 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "execution": "cpp",
-        "memory": "cpp"
-    }
+        "memory": "cpp",
+        "chrono": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
 }

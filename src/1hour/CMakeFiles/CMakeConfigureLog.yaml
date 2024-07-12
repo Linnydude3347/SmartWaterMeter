@@ -588,3 +588,283 @@ events:
         
       exitCode: 2
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-J7g1DM"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-J7g1DM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-J7g1DM'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d8e22/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d8e22.dir/build.make CMakeFiles/cmTC_d8e22.dir/build
+        Building C object CMakeFiles/cmTC_d8e22.dir/OpenMPCheckVersion.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_d8e22.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_d8e22.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_d8e22.dir/OpenMPCheckVersion.c.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-J7g1DM/OpenMPCheckVersion.c
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_d8e22.dir/OpenMPCheckVersion.c.o] Error 1
+        make: *** [cmTC_d8e22/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-QXqF4h"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-QXqF4h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-QXqF4h'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_89b4e/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_89b4e.dir/build.make CMakeFiles/cmTC_89b4e.dir/build
+        Building CXX object CMakeFiles/cmTC_89b4e.dir/OpenMPCheckVersion.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_89b4e.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_89b4e.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_89b4e.dir/OpenMPCheckVersion.cpp.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-QXqF4h/OpenMPCheckVersion.cpp
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_89b4e.dir/OpenMPCheckVersion.cpp.o] Error 1
+        make: *** [cmTC_89b4e/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-WsynaK"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-WsynaK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-WsynaK'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cb197/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cb197.dir/build.make CMakeFiles/cmTC_cb197.dir/build
+        Building C object CMakeFiles/cmTC_cb197.dir/OpenMPCheckVersion.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_cb197.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_cb197.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_cb197.dir/OpenMPCheckVersion.c.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-WsynaK/OpenMPCheckVersion.c
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_cb197.dir/OpenMPCheckVersion.c.o] Error 1
+        make: *** [cmTC_cb197/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-8qCaOT"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-8qCaOT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-8qCaOT'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_17b0b/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_17b0b.dir/build.make CMakeFiles/cmTC_17b0b.dir/build
+        Building CXX object CMakeFiles/cmTC_17b0b.dir/OpenMPCheckVersion.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_17b0b.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_17b0b.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_17b0b.dir/OpenMPCheckVersion.cpp.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-8qCaOT/OpenMPCheckVersion.cpp
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_17b0b.dir/OpenMPCheckVersion.cpp.o] Error 1
+        make: *** [cmTC_17b0b/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-Q7ObFz"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-Q7ObFz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-Q7ObFz'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5aebb/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5aebb.dir/build.make CMakeFiles/cmTC_5aebb.dir/build
+        Building C object CMakeFiles/cmTC_5aebb.dir/OpenMPCheckVersion.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_5aebb.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_5aebb.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_5aebb.dir/OpenMPCheckVersion.c.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-Q7ObFz/OpenMPCheckVersion.c
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_5aebb.dir/OpenMPCheckVersion.c.o] Error 1
+        make: *** [cmTC_5aebb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-bhjT0q"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-bhjT0q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-bhjT0q'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0d863/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0d863.dir/build.make CMakeFiles/cmTC_0d863.dir/build
+        Building CXX object CMakeFiles/cmTC_0d863.dir/OpenMPCheckVersion.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_0d863.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_0d863.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_0d863.dir/OpenMPCheckVersion.cpp.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-bhjT0q/OpenMPCheckVersion.cpp
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_0d863.dir/OpenMPCheckVersion.cpp.o] Error 1
+        make: *** [cmTC_0d863/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-YRXDS2"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-YRXDS2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-YRXDS2'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ec405/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ec405.dir/build.make CMakeFiles/cmTC_ec405.dir/build
+        Building C object CMakeFiles/cmTC_ec405.dir/OpenMPCheckVersion.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_ec405.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_ec405.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_ec405.dir/OpenMPCheckVersion.c.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-YRXDS2/OpenMPCheckVersion.c
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_ec405.dir/OpenMPCheckVersion.c.o] Error 1
+        make: *** [cmTC_ec405/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:45 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-BVWqNf"
+      binary: "/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-BVWqNf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/SEAL-4.1"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.3"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-BVWqNf'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9cf9a/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9cf9a.dir/build.make CMakeFiles/cmTC_9cf9a.dir/build
+        Building CXX object CMakeFiles/cmTC_9cf9a.dir/OpenMPCheckVersion.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -fopenmp=libomp -Wno-unused-command-line-argument -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -MD -MT CMakeFiles/cmTC_9cf9a.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_9cf9a.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_9cf9a.dir/OpenMPCheckVersion.cpp.o -c /Users/benjaminantonellis/Documents/GitHub/SmartWaterMeter/src/1hour/CMakeFiles/CMakeScratch/TryCompile-BVWqNf/OpenMPCheckVersion.cpp
+        clang: error: unsupported argument 'libomp' to option '-fopenmp='
+        make[1]: *** [CMakeFiles/cmTC_9cf9a.dir/OpenMPCheckVersion.cpp.o] Error 1
+        make: *** [cmTC_9cf9a/fast] Error 2
+        
+      exitCode: 2
+...

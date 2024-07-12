@@ -4,7 +4,7 @@
 # compile CXX with /opt/homebrew/Cellar/llvm/18.1.6/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/Cellar/libomp/18.1.4/include -isystem /opt/homebrew/include/SEAL-4.1 -isystem /opt/homebrew/include
+CXX_INCLUDES = -I/opt/homebrew/Cellar/libomp/18.1.6/include -isystem /opt/homebrew/include/SEAL-4.1 -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 =  -fopenmp=libomp -Wno-unused-command-line-argument -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
 

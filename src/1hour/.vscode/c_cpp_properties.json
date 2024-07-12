@@ -4,7 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/homebrew/Cellar/**"
+                "/opt/homebrew/Cellar/**",
+                "/opt/homebrew/Cellar/gcc/14.1.0_1/include/c++/14"
             ],
             "defines": [],
             "macFrameworkPath": [

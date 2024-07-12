@@ -11,13 +11,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(SEAL_USE_CXX17 OFF)
 
 # Import Microsoft SEAL
-find_package(SEAL 4.1.2 EXACT REQUIRED) # Original
+find_package(SEAL 4.1.2 EXACT REQUIRED)
 
 # Import OpenMP
 set(CMAKE_C_COMPILER "/opt/homebrew/Cellar/llvm/18.1.6/bin/clang")
 set(CMAKE_CXX_COMPILER "/opt/homebrew/Cellar/llvm/18.1.6/bin/clang++")
-set(OPENMP_LIBRARIES "/opt/homebrew/Cellar/libomp/18.1.4/lib")
-set(OPENMP_INCLUDES "/opt/homebrew/Cellar/libomp/18.1.4/include")
+set(OPENMP_LIBRARIES "/opt/homebrew/Cellar/libomp/18.1.6/lib")
+set(OPENMP_INCLUDES "/opt/homebrew/Cellar/libomp/18.1.6/include")
 
 OPTION (USE_OpenMP "Use OpenMP to enable <omp.h>" ON)
 
