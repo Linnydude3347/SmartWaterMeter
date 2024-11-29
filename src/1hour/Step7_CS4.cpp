@@ -116,7 +116,7 @@ int main(int argc, char** argv) {
     std::cout << "===End===" << std::endl;
     auto endWhole = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> diffWhole = endWhole - startWhole;
-    std::cout << "Whole runtime is: " << diffWhole.count(); << "s" << std::endl;
+    std::cout << "Whole runtime is: " << diffWhole.count() << "s" << std::endl;
     ShowMemoryUsage(getpid());
 
     return 0;
