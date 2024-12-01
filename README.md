@@ -41,8 +41,8 @@ For testing Microsoft SEAL yourself, you may use these optional dependencies:
 Ben Antonellis, Alex Nguyen, Gabe Smith
 
 ### Sponsors
-- Department of Computer Science, Western Michigan University, Kalamazoo, USA
-- Professor Shameek Bhattacharjee
+- Western Michigan University
+- Dr. Shameek Bhattacharjee
 
 ## Faculy Advisors
 - Halil Dursunoglu
