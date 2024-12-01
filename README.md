@@ -44,6 +44,6 @@ Ben Antonellis, Alex Nguyen, Gabe Smith
 - Western Michigan University
 - Dr. Shameek Bhattacharjee
 
-## Faculy Advisors
+### Faculy Advisors
 - Halil Dursunoglu
 - Dr. Wuwei Shen
