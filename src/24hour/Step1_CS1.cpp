@@ -79,6 +79,9 @@ int main(int argc, char** argv) {
             int64_t temp_rec = PRECISION2 * 1 / log(*iter2 + 2);
             double tep_rec = PRECISION2 * 1 / log(*iter2 + 2);
 
+            //double tep = PRECISION * log(*iter2 + 2); int64_t temp = (int64_t)tep;
+            //double tep_rec = PRECISION2 * 1 / log(*iter2 + 2); int64_t temp_rec = (int64_t)tep_rec;
+
             if (abs(tep - temp) >= 0.5) {
                 temp += 1;
             }
@@ -188,8 +191,6 @@ int main(int argc, char** argv) {
             evaluator.relinearize_inplace(temp_AM_input, relinKey);
             result_ct_AM[j] = temp_AM_input;
         }
-
-        printf("\nNEED TO REACH HERE\n");
 
         for (int64_t j = 0; j < row_count_AM; j++) {
             result_ct_AM[j].save(result_AM);
